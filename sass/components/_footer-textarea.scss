@@ -1,20 +1,32 @@
 .form-field-input {
   display: flex;
+  align-items: center;
+  @media screen and (min-width: 480px) {
+    // display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .footer__area {
-  width: 358px;
   height: 50px;
-  margin-right: 12px;
+
   background-color: var(--color-bg-hero-footer);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding-left: 16px;
+
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
+
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
@@ -22,6 +34,23 @@
     &:checked {
       border-color: var(--color-bg-blue);
     }
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+    // align-items: center;
   }
 }
 

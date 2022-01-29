@@ -3,16 +3,37 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &-list {
+  &-address-list {
     list-style: none;
-  }
+    @media screen and (min-width: 480px) {
+      li {
+        display: block;
+        text-align: center;
+      }
+      li:nth-child(-n + 2) {
+        margin-bottom: 8px;
+        // outline: 3px solid navy;
+      }
 
-  .footer-list li:not(:last-child) {
-    margin-bottom: 9px;
+      li:nth-child(3) {
+        margin-bottom: 60px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      li:nth-child(3) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__links {
-    margin-right: 93px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   &__title {
@@ -23,11 +44,34 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
   }
 
-  &__list {
+  &-address {
+    @media screen and (min-width: 480px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+  }
+
+  &-social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__item {
@@ -35,6 +79,16 @@
     height: 44px;
     & + & {
       margin-left: 10px;
+
+      @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+      }
+
+      @media screen and (min-width: 768px) {
+      }
+
+      @media screen and (min-width: 1200px) {
+      }
     }
   }
 
@@ -62,13 +116,36 @@
 }
 
 .wrapper-footer {
-  display: flex;
+  // display: flex;
 
   & a {
     margin-bottom: 20px;
   }
   &__address {
-    margin-right: 70px;
+    @media screen and (min-width: 480px) {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    // display: flex;
+    // flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -111,6 +188,18 @@
 
 .wrapper-logo-footer {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex: none;
+  }
 }
 
 .logo-footer {
