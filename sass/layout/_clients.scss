@@ -1,0 +1,113 @@
+.clients__title {
+  color: var(--color-logo-title);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+  // margin-left: 30px;
+}
+
+.client__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  //====НЕРАБОЧИЙ КОД===ВРОДЕ ПО ЦЕНТРУ НО ПРИ ОБНУЛЕНИИ МАРДЖИНОВ ПРОИСХОДИТ НАСЛЕДОВАНИЕ====================
+  // @media screen and (min-width: 480px) {
+  //   width: 210px;
+  //   height: 92px;
+
+  //   width: calc(100% / 2 - 30px);
+
+  //   &:nth-child(2n + 2) {
+  //     margin-right: 0;
+  //   }
+  //   &:nth-last-child(-n + 2) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   width: calc(100% / 3 - 30px);
+  //   // width: 226px;
+  //   // height: 92px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: calc(100% / 6 - 30px);
+  // }
+
+  //============РАБОЧИЙ КОД ПЕРЕПЕРЕОПРЕДЕЛЕНИЕ НАСЛЕДОВАНИЯ=======================================================
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n + 2) {
+      margin-right: 30px;
+    }
+
+    &:nth-last-child(-n + 1) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+    margin-bottom: 0;
+
+    &:nth-last-child(-n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.clients__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--icons);
+  color: var(--color-bg-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  & {
+    &:hover,
+    &:focus {
+      fill: currentColor;
+      border-color: var(--color-bg-blue);
+    }
+  }
+}

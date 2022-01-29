@@ -1,0 +1,131 @@
+.footer {
+  background: var(--color-bg-hero-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-list {
+    list-style: none;
+  }
+
+  .footer-list li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__links {
+    margin-right: 93px;
+  }
+
+  &__title {
+    color: var(--color-bg-white);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--color-bg-white);
+    color: var(--color-bg-white);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    & {
+      &:hover,
+      &:focus {
+        fill: currentColor;
+        background-color: var(--color-bg-blue);
+      }
+    }
+  }
+}
+
+.wrapper-footer {
+  display: flex;
+
+  & a {
+    margin-bottom: 20px;
+  }
+  &__address {
+    margin-right: 70px;
+  }
+}
+
+.link-footer {
+  color: var(--address-color-mail-tel);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  & {
+    &:hover,
+    &:focus {
+      color: var(--color-bg-blue);
+    }
+  }
+  &-address {
+    color: var(--color-bg-white);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    & {
+      &:hover,
+      &:focus {
+        color: var(--color-bg-blue);
+      }
+    }
+  }
+}
+
+.wrapper-logo-footer {
+  margin-bottom: 20px;
+}
+
+.logo-footer {
+  color: var(--color-bg-blue);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &-footer {
+    color: var(--color-bg-white);
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}

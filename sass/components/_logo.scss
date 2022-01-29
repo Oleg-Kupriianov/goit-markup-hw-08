@@ -1,0 +1,38 @@
+.logo {
+  color: var(--color-bg-blue);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  &__header {
+    color: var(--color-logo-title);
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  &__footer {
+    color: var(--color-bg-white);
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+// .logo-color-header {
+//   color: var(--color-logo-title);
+//   font-family: Raleway, cursive;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.2;
+// }
+
+// .logo-color-footer {
+//   color: var(--color-bg-white);
+//   font-family: Raleway, cursive;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.2;
+// }

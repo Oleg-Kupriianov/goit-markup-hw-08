@@ -1,0 +1,17 @@
+.header {
+  background: var(--color-bg-white);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+}
