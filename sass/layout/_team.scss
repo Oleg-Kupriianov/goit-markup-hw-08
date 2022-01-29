@@ -7,10 +7,8 @@
     // font-weight: 700;
     text-align: center;
 
-    @media screen and (min-width: 480px) {
-      @include font(28px, 33px, 700, null);
-      margin-bottom: 30px;
-    }
+    @include font(28px, 33px, 700, null);
+    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       @include font(28px, 33px, 700, null);

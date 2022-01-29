@@ -8,10 +8,8 @@
     // line-height: 1.17;
     text-align: center;
 
-    @media screen and (min-width: 480px) {
-      @include font(28px, 33px, 700, null);
-      margin-bottom: 30px;
-    }
+    @include font(28px, 33px, 700, null);
+    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       @include font(28px, 33px, 700, null);
@@ -32,9 +30,7 @@
       position: relative;
       margin: 0 auto 30px;
 
-      @media screen and (min-width: 480px) {
-        width: calc(100% / 1 - 30px);
-      }
+      width: calc(100% / 1 - 30px);
 
       @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 30px);

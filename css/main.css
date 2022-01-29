@@ -314,10 +314,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding: 60px 0;
-  }
+.section {
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -915,15 +913,10 @@ body {
 
 .team__title {
   text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .team__title {
-    font-size: 28px;
-    line-height: 33px;
-    font-weight: 700;
-    margin-bottom: 30px;
-  }
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1037,15 +1030,10 @@ body {
 
 .work-title {
   text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .work-title {
-    font-size: 28px;
-    line-height: 33px;
-    font-weight: 700;
-    margin-bottom: 30px;
-  }
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1074,12 +1062,7 @@ body {
 .work-list__thumb {
   position: relative;
   margin: 0 auto 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .work-list__thumb {
-    width: calc(100% / 1 - 30px);
-  }
+  width: calc(100% / 1 - 30px);
 }
 
 @media screen and (min-width: 768px) {
@@ -1124,53 +1107,24 @@ body {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .client__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 210px;
+  width: calc((100% - 60px) / 2);
   height: 92px;
-}
-
-.client__item:nth-child(2n + 2) {
-  margin-right: 0;
-}
-
-.client__item:nth-last-child(-n + 2) {
-  margin-bottom: 0;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .client__item {
-    width: 226px;
-    height: 92px;
-  }
-  .client__item:nth-child(3n + 3) {
-    margin-right: 0;
-  }
-  .client__item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
-  .client__item:nth-child(2n + 2) {
-    margin-right: 30px;
-  }
-  .client__item:nth-last-child(-n + 1) {
-    margin-right: 0;
+    width: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .client__item {
-    width: 170px;
-    height: 92px;
-    margin-bottom: 0;
-  }
-  .client__item:nth-last-child(-n + 1) {
-    margin-right: 0;
-  }
-  .client__item:nth-child(3) {
-    margin-right: 30px;
+    width: calc((100% - 180px) / 6);
   }
 }
 
