@@ -5,28 +5,27 @@
 
   &-address-list {
     list-style: none;
-    @media screen and (min-width: 480px) {
-      li {
-        display: block;
-        text-align: center;
-      }
-      li:nth-child(-n + 2) {
-        margin-bottom: 8px;
-        // outline: 3px solid navy;
-      }
 
-      li:nth-child(3) {
-        margin-bottom: 60px;
-      }
+    li {
+      display: block;
+      text-align: center;
+    }
+    li:nth-child(-n + 2) {
+      margin-bottom: 8px;
+      // outline: 3px solid navy;
     }
 
-    @media screen and (min-width: 768px) {
+    li:nth-child(3) {
+      margin-bottom: 60px;
     }
+  }
 
-    @media screen and (min-width: 1200px) {
-      li:nth-child(3) {
-        margin-bottom: 0;
-      }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    li:nth-child(3) {
+      margin-bottom: 0;
     }
   }
 
@@ -45,9 +44,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 480px) {
-      text-align: center;
-    }
+    text-align: center;
 
     @media screen and (min-width: 768px) {
     }
@@ -57,10 +54,8 @@
   }
 
   &-address {
-    @media screen and (min-width: 480px) {
-      display: flex;
-      justify-content: center;
-    }
+    display: flex;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
     }
@@ -80,9 +75,7 @@
     & + & {
       margin-left: 10px;
 
-      @media screen and (min-width: 480px) {
-        margin-bottom: 60px;
-      }
+      margin-bottom: 60px;
 
       @media screen and (min-width: 768px) {
       }
@@ -122,11 +115,9 @@
     margin-bottom: 20px;
   }
   &__address {
-    @media screen and (min-width: 480px) {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-    }
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
 
     @media screen and (min-width: 768px) {
     }
@@ -189,10 +180,8 @@
 .wrapper-logo-footer {
   margin-bottom: 20px;
 
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
   }

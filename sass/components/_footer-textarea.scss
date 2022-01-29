@@ -1,10 +1,9 @@
 .form-field-input {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 480px) {
-    // display: flex;
-    flex-direction: column;
-  }
+
+  // display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 768px) {
   }
@@ -36,14 +35,14 @@
     }
   }
 
-  @media screen and (min-width: 480px) {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 16px;
 
   @media screen and (min-width: 768px) {
     width: 450px;
     margin-bottom: 20px;
+    padding-left: 16px;
   }
 
   @media screen and (min-width: 1200px) {
