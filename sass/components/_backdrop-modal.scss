@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
   transition: opacity 250ms, visibility 250ms;
+  overflow-y: scroll;
   &.is-hidden .modal {
     transform: scale(2) rotate(180deg);
   }
@@ -18,7 +19,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
 
-  width: 528px;
+  width: 90%;
   min-height: 581px;
   border-radius: 4px;
   background-color: var(--color-bg-white);
@@ -66,6 +67,19 @@
         border-color: var(--color-bg-blue);
       }
     }
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
   }
 }
 
@@ -164,10 +178,20 @@
   &-text {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--text-color);
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   &-text span {
@@ -184,11 +208,16 @@
     fill: transparent;
   }
   &-link {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--color-bg-blue);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 }
 

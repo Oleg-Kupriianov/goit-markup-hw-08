@@ -1,8 +1,7 @@
 .work {
   padding-top: 47px;
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: block;
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }
 
@@ -12,9 +11,6 @@
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-
-  // @include font(28px, 16px, 700, null);
-  // margin-bottom: 30px;
 }
 
 .work-list {
