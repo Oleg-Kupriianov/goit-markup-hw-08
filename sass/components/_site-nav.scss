@@ -1,26 +1,49 @@
-.site__nav {
-  display: flex;
-  margin-left: 93px;
-  li:not(:last-child) {
-    margin-right: 50px;
+.navigation {
+  text-align: start;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+
+    & li:not(:last-child) {
+      margin-right: 50px;
+    }
   }
+  & li:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+
   .link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @media screen and (max-width: 767px) {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+    }
   }
+
   .current {
     position: relative;
-    & {
-      &:after {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        margin-top: 28px;
-        background-color: var(--color-bg-blue);
+
+    @media screen and (max-width: 767px) {
+      color: var(--color-bg-blue);
+    }
+
+    @media screen and (min-width: 768px) {
+      & {
+        &:after {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 100%;
+          height: 4px;
+          border-radius: 2px;
+          margin-top: 28px;
+          background-color: var(--color-bg-blue);
+        }
       }
     }
   }
@@ -29,12 +52,10 @@
 .link-header {
   color: var(--text-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: flex;
-  align-items: center;
   height: 100%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,12 +75,37 @@
     margin-right: 10px;
     fill: var(--icons);
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
-.auth-nav {
-  @media screen and (max-width: 480px) {
-    margin-bottom: 10px;
+.contacts {
+  text-align: start;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
   }
+
+  & li:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & svg {
+      display: none;
+    }
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     & li:nth-child(1) {
       margin-bottom: 10px;
@@ -68,15 +114,104 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+    margin-left: auto;
     & li:not(:first-child) {
       margin-left: 50px;
     }
   }
 
   & .link {
+    &,
+    &:visited {
+      color: var(--text-color);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+}
+
+.link-header__tel {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+
     color: var(--text-color);
     font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    height: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    & {
+      &:hover,
+      &:focus {
+        color: var(--color-bg-blue);
+      }
+    }
+    & {
+      &:hover svg,
+      &:focus svg {
+        fill: var(--color-bg-blue);
+      }
+    }
+    &-icon {
+      margin-right: 10px;
+      fill: var(--icons);
+    }
+  }
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
+  }
+}
+.menu-social {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+    li:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  li {
+    a {
+      &,
+      &:visited {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+
+        color: #2196f3;
+      }
+      &:hover,
+      &:active {
+        color: red;
+      }
+    }
+  }
+}
+
+.contacts-low {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
   }
 }

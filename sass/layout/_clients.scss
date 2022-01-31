@@ -17,6 +17,7 @@
 
 .client__item {
   height: 92px;
+  margin: 15px;
 
   @media screen and (min-width: 480px) {
     width: calc((100% - 4 * 15px) / 2);

@@ -1,15 +1,18 @@
 .header {
   position: relative;
   background: var(--color-bg-white);
-  padding-top: 24px;
-  padding-bottom: 25px;
+
   border-bottom: 1px solid #ececec;
 
   @media screen and (min-width: 480px) {
+    padding: 10px 0;
   }
   @media screen and (min-width: 768px) {
+    padding: 21px 0;
   }
   @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 
   &__container {
@@ -28,6 +31,7 @@
     @media screen and (min-width: 480px) {
     }
     @media screen and (min-width: 768px) {
+      width: 100%;
       display: flex;
       align-items: center;
     }
