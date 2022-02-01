@@ -1363,6 +1363,12 @@ body.modal-open {
   }
 }
 
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
 @media screen and (min-width: 480px) {
   .clients__list {
     display: flex;
@@ -1374,6 +1380,8 @@ body.modal-open {
 .client__item {
   height: 92px;
   margin: -15px;
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 @media screen and (min-width: 480px) {
