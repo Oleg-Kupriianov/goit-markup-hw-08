@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   background: var(--color-bg-white);
 
   border-bottom: 1px solid #ececec;
@@ -16,6 +15,8 @@
   }
 
   &__container {
+    position: relative;
+
     @media screen and (min-width: 480px) {
     }
     @media screen and (min-width: 768px) {

@@ -1,6 +1,7 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 
   &-title {
     font-weight: 700;
@@ -17,6 +18,9 @@
   }
 
   &-item {
+    display: flex;
+    flex-direction: column;
+
     position: relative;
     // width: 370px;
     box-sizing: border-box;
@@ -47,14 +51,15 @@
       padding: 20px 24px;
       border: 1px solid #eeeeee;
       border-top: none;
+      flex-grow: 1;
     }
 
-    &:nth-child(3n + 3) {
-      margin-right: 0;
-    }
-    &:not(:nth-last-child(n + 4)) {
-      margin-bottom: 0;
-    }
+    // &:nth-child(3n + 3) {
+    //   margin-right: 0;
+    // }
+    // &:not(:nth-last-child(n + 4)) {
+    //   margin-bottom: 0;
+    // }
   }
 
   &-thumb {

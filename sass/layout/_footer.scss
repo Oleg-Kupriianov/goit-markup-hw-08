@@ -118,9 +118,6 @@
 }
 
 .wrapper-footer {
-  & a {
-    margin-bottom: 20px;
-  }
   &__address {
     @media screen and (min-width: 768px) {
     }
@@ -131,6 +128,9 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: 1200px) {
@@ -186,7 +186,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex: none;
+    display: block;
   }
 }
 

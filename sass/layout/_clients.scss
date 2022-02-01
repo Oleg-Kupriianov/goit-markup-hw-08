@@ -4,7 +4,11 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -17,7 +21,7 @@
 
 .client__item {
   height: 92px;
-  margin: 15px;
+  margin: -15px;
 
   @media screen and (min-width: 480px) {
     width: calc((100% - 4 * 15px) / 2);
